@@ -18,7 +18,19 @@ function MenuItems() {
       }}
       defaultSelectedKeys={[pathname]}
     >
+      <Menu.Item key="/Mainpage">
+        <NavLink to="/Mainpage">Home</NavLink>
+      </Menu.Item>
+      <Menu.Item key="/Team">
+        <NavLink to="/Team">Team</NavLink>
+      </Menu.Item>
+      <Menu.Item key="/Roadmap">
+        <NavLink to="/Roadmap">Roadmap</NavLink>
+      </Menu.Item>
       <Menu.Item key="/quickstart">
+        <NavLink to="/quickstart">🚀 Quick Start</NavLink>
+      </Menu.Item>
+      {/* <Menu.Item key="/quickstart">
         <NavLink to="/quickstart">🚀 Quick Start</NavLink>
       </Menu.Item>
       <Menu.Item key="/wallet">
@@ -41,7 +53,7 @@ function MenuItems() {
       </Menu.Item>
       <Menu.Item key="/contract">
         <NavLink to="/contract">📄 Contract</NavLink>
-      </Menu.Item>
+      </Menu.Item> */}
     </Menu>
   );
 }

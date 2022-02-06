@@ -1,29 +1,27 @@
 import { useEffect } from "react";
 import { useMoralis } from "react-moralis";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"; // redirect
 import Account from "components/Account/Account";
 import Chains from "components/Chains";
 import TokenPrice from "components/TokenPrice";
-import ERC20Balance from "components/ERC20Balance";
-import ERC20Transfers from "components/ERC20Transfers";
-import DEX from "components/DEX";
-import NFTBalance from "components/NFTBalance";
-import Wallet from "components/Wallet";
-import { Layout, Tabs } from "antd";
+// import ERC20Balance from "components/ERC20Balance";
+// import ERC20Transfers from "components/ERC20Transfers";
+// import DEX from "components/DEX";
+// import NFTBalance from "components/NFTBalance";
+// import Wallet from "components/Wallet";
+import { Layout } from "antd"; // tabs
 import "antd/dist/antd.css";
 import NativeBalance from "components/NativeBalance";
 import "./style.css";
 import QuickStart from "components/QuickStart";
-import Contract from "components/Contract/Contract";
-import Text from "antd/lib/typography/Text";
-import Ramper from "components/Ramper";
+// import Contract from "components/Contract/Contract";
+// import Text from "antd/lib/typography/Text";
+// import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
-const { Header, Footer } = Layout;
+import Mainpage from "components/Mainpage";
+import Team from "components/Team";
+import Roadmap from "components/Roadmap";
+const { Header } = Layout; //Footer
 
 const styles = {
   content: {
@@ -87,7 +85,19 @@ const App = ({ isServerInfo }) => {
 
         <div style={styles.content}>
           <Switch>
+            <Route path="/Mainpage">
+              <Mainpage />
+            </Route>
+            <Route path="/Team">
+              <Team />
+            </Route>
+            <Route path="/Roadmap">
+              <Roadmap />
+            </Route>
             <Route exact path="/quickstart">
+              <QuickStart isServerInfo={isServerInfo} />
+            </Route>
+            {/* <Route exact path="/quickstart">
               <QuickStart isServerInfo={isServerInfo} />
             </Route>
             <Route path="/wallet">
@@ -126,14 +136,14 @@ const App = ({ isServerInfo }) => {
             </Route>
             <Route path="/ethereum-boilerplate">
               <Redirect to="/quickstart" />
-            </Route>
+            </Route> */}
             <Route path="/nonauthenticated">
               <>Please login using the "Authenticate" button</>
             </Route>
           </Switch>
         </div>
       </Router>
-      <Footer style={{ textAlign: "center" }}>
+      {/* <Footer style={{ textAlign: "center" }}>
         <Text style={{ display: "block" }}>
           ⭐️ Please star this{" "}
           <a
@@ -167,7 +177,7 @@ const App = ({ isServerInfo }) => {
             Moralis
           </a>
         </Text>
-      </Footer>
+      </Footer> */}
     </Layout>
   );
 };
