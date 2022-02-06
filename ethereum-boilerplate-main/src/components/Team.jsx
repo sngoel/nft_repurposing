@@ -19,48 +19,7 @@ function Team() {
           <Logo />
           <div className="container">
             <h2>ar4s</h2>
-            <p className="title">CEO &amp; Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p></p>
-          </div>
-        </div>
-      </div>
-
-      <div className="column">
-        <div className="card">
-          <Logo />
-          <div className="container">
-            <h2>ynnad</h2>
-            <p className="title">Art Director</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p></p>
-          </div>
-        </div>
-      </div>
-
-      <div className="column">
-        <div className="card">
-          <Logo />
-          <div className="container">
-            <h2>jgreen7</h2>
-            <p className="title">Designer</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p></p>
-          </div>
-        </div>
-      </div>
-
-      <div className="column">
-        <div className="card">
-          <Logo />
-          <div className="container">
-            <h2>narutozk</h2>
-            <p className="title">Art Director</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
+            <p className="title">Co-Founder &amp; CEO</p>
             <p></p>
           </div>
         </div>
@@ -71,9 +30,40 @@ function Team() {
           <Logo />
           <div className="container">
             <h2>sngoel</h2>
-            <p className="title">Art Director</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
+            <p className="title">Co-Founder &amp; CTO</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div className="column">
+        <div className="card">
+          <Logo />
+          <div className="container">
+            <h2>narutozk</h2>
+            <p className="title">CIO</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div className="column">
+        <div className="card">
+          <Logo />
+          <div className="container">
+            <h2>ynnad</h2>
+            <p className="title">CDO</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div className="column">
+        <div className="card">
+          <Logo />
+          <div className="container">
+            <h2>jgreen7</h2>
+            <p className="title">CPO</p>
             <p></p>
           </div>
         </div>
